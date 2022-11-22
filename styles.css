@@ -45,6 +45,9 @@ p {
     color:  hsl(158, 36%, 37%);
 }
 
+.price > p {
+   margin: 0;
+}
 
 /* LAYOUT */
 .wrapper{
@@ -68,8 +71,9 @@ p {
 
 .price {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 1em;
+    margin-top: 2em;
 }
 
 
