@@ -1,0 +1,147 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    background-color: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+}
+
+/* TYPOGRAPHY */
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.83rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+
+h2{
+    font-family: 'Fraunces',sans-serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+p {
+    margin-bottom: 0;
+}
+
+
+.actual-price {
+    font-family: 'Fraunces',sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color:  hsl(158, 36%, 37%);
+}
+
+
+/* LAYOUT */
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 375px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+
+.main-content {
+    padding: 1em 1.2em;
+    text-align: left;
+    max-width: 450px;
+}
+
+
+.price {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+}
+
+
+/* IMAGES */
+.mobile-img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.cart-icon {
+    margin-right: .5em;
+}
+
+
+/* BUTTON */
+.btn {
+    font-family: inherit;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 1em 0;
+    border: none;
+    cursor: pointer;
+    color:  hsl(0, 0%, 100%);
+    background:  hsl(158, 36%, 37%);
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #1A4032;
+}
+
+
+/* MEDIA QUERY */
+@media (min-width: 768px){
+    .wrapper {
+        display: flex;
+        max-width: 550px;
+    }
+
+    .intro,
+    .main-content{
+        width: 50%;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em  1.5em;
+    }
+
+    .mobile-img{
+        display: none;
+    }
+
+    .desktop-img{
+        display: block;
+        width:100%;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
