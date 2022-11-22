@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Conquering Responsive Layouts - Kevin Powell](https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts) - This 21-day course helped me understand Mobile-first workflow  and generally how to build reponsive layouts.
+- [Conquering Responsive Layouts - Kevin Powell](https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts) - This 21-day course helped me understand Mobile-first workflow and generally how to build reponsive layouts.
 
 
 ## Author
