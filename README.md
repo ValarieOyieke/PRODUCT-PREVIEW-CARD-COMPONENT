@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-with-html-and-css-e4MdzFntfn)
 - Live Site URL: [Netlify](https://comforting-kelpie-447b18.netlify.app)
 
 ## My process
