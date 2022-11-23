@@ -11,19 +11,23 @@ body {
     font-size: 0.875rem;
     background-color: hsl(30, 38%, 92%);
     color: hsl(228, 12%, 48%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* TYPOGRAPHY */
-h1 {
+.title {
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 0.83rem;
+    letter-spacing: 0.3125em;
     font-weight: 400;
     margin-top: 0;
 }
 
 
-h2{
+h1{
     font-family: 'Fraunces',sans-serif;
     color: hsl(212, 21%, 14%);
     font-size: 2rem;
@@ -33,13 +37,8 @@ h2{
 }
 
 
-p {
-    margin-bottom: 0;
-}
-
-
 .price > p {
-   margin: 0;
+    margin: 0;
 }
 
 
@@ -53,19 +52,16 @@ p {
 
 /* LAYOUT */
 .wrapper{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 90%;
     max-width: 375px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 
 .main-content {
-    padding: 1em 1.2em;
+    padding: 1.5em 1.2em;
     text-align: left;
     max-width: 450px;
 }
@@ -74,25 +70,16 @@ p {
 .price {
     display: flex;
     align-items: center;
-    margin-top: 2em;
-    gap: 1em;  
+    margin-top: 1.5em;
+    gap: 1em;
 }
 
 
-/* IMAGES */
-.mobile-img {
-    width: 100%;
+/* IMAGE */
+
+img {
+    max-width: 100%;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.desktop-img {
-    display: none;
-}
-
-.cart-icon {
-    margin-right: .5em;
 }
 
 
@@ -100,7 +87,7 @@ p {
 .btn {
     font-family: inherit;
     font-weight: 900;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625em;
     padding: 1em 0;
     border: none;
     cursor: pointer;
@@ -112,6 +99,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: .7em;
 }
 
 .btn:hover,
@@ -136,18 +124,10 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 1em  1.5em;
     }
 
-    .mobile-img{
-        display: none;
-    }
-
-    .desktop-img{
+    .desktop-img {
         display: block;
-        width:100%;
-        object-fit: cover;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
     }
+
 }
